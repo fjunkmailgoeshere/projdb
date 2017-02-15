@@ -1,27 +1,95 @@
 <template name="admin">
 
-This is the admin page
+	This is the admin page
 
-<div class="row">
-	<div class="col-md-6">
-		<button type="button" class="btn btn-primary btn-lg">Add New 		User</button>
+	<div class="row">
+		<div class="col-md-6">
+			<button type="button" class="btn btn-primary btn-lg">Add New 		User</button>
+		</div>
+		<div class="col-md-6">
+			<button type="button" class="btn btn-primary btn-lg">Reset 		Password</button>
+		</div>
 	</div>
-	<div class="col-md-6">
-		<button type="button" class="btn btn-primary btn-lg">Reset 		Password</button>
+	<div class="row">
+		<div class="col-md-6">
+			<button type="button" class="btn btn-primary btn-lg">Download 		Data</button>
+		</div>
+		<div class="col-md-6">
+			<button type="button" class="btn btn-primary btn-lg">Edit 		Permissions</button>
+		</div>
 	</div>
-</div>
-<div class="row">
-	<div class="col-md-6">
-		<button type="button" class="btn btn-primary btn-lg">Download 		Data</button>
+	<div class="row">
+		<div class="col-md-12">
+	<button type="button" class="btn btn-primary btn-lg">Backup</button>
+		</div>
 	</div>
-	<div class="col-md-6">
-		<button type="button" class="btn btn-primary btn-lg">Edit 		Permissions</button>
-	</div>
-</div>
-<div class="row">
-	<div class="col-md-12">
-<button type="button" class="btn btn-primary btn-lg">Backup</button>
-	</div>
-</div>
 
+
+
+	{{> horizontal_rule}}
+	<BR><BR><BR>
+
+	<p> The below are just insertions of what happens when we click on each button. Most likely they'll be added to a popup, but since we are only in the first stages it's OK to just dump them here below</P>
+
+	<BR><BR><BR>
+
+	{{> admin_addnewuser}}
+	{{> horizontal_rule}}
+	{{> admin_resetpassword}}
+	{{> horizontal_rule}}
+	{{> admin_downloaddata}}
+	{{> horizontal_rule}}
+	{{> admin_editpermissions}}
+	{{> horizontal_rule}}
+	{{> admin_backup}}	
+
+</template>
+
+<template name="horizontal_rule">
+	<p align="left">______________________________________________________________________________________________</p>
+</template>
+
+
+
+<template name="admin_addnewuser">
+	<h2>Template: admin_addnewuser</h2><BR>
+	<form>
+		Enter the below to add new user: <BR><BR>
+
+		Username: <input type="text" name="username"><br>
+		Password: <input type="text" name="password"><br>
+		<button type = "submit">Add new user</button>
+	</form>
+</template>
+
+<template name="admin_resetpassword">
+	<h2>Template: admin_resetpassword</h2>
+	<form>
+		Old password: <input type="password" name="oldpassword"><br>
+		New password: <input type="password" name="newpassword"><br>
+		New password again: <input type="password" name="newpasswordagain"><br>
+		<button type="submit">Change password</button>
+	</form>
+</template>
+
+<template name="admin_downloaddata">
+	<h2>Template: admin_downloaddata</h2>
+	<p>
+		<button type="button" class="btn btn-primary btn-lg">Click to download all data</button>
+	</p>
+</template>
+
+<template name="admin_editpermissions">
+	<h2>Template: admin_editpermissions</h2>
+	<form>
+		Something: (not sure what to put here)<input type="text" name="something"><br>
+		<button type="submit">Change permissions</button>
+	</form>
+</template>
+
+<template name="admin_backup">
+	<h2>Template: admin_backup</h2>
+	<form>
+		<button type="button" class="btn btn-primary btn-lg">Click to backup system</button>
+	</form>
 </template>
