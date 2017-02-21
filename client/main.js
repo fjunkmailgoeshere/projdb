@@ -21,3 +21,10 @@ Template.main.clientID = function() {
 //ADDED AS AN EXAMPLE OF HOW DATABASE DATA GETS PASSED TO HTML FILE
 
 
+
+Template.main.events({
+	'submit form': function(event) {
+		event.preventDefault();
+		Router.go("home");
+	}
+});
