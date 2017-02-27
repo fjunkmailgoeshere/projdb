@@ -7,13 +7,16 @@ Template.home.events({
 	'click .adminlink': function() {
 		Router.go("admin");
 	},
-	'click .contactlink': function() {
-		Router.go("contact");
+	'click .consultlink': function() {
+		Router.go("consults");
 	},
 	'click .traininglink': function() {
 		Router.go("trainings");
 	},
 	'click .reportquerylink': function() {
 		Router.go("reportquery");
+	},
+	'click .communityaccesslink': function() {
+		Router.go("communityaccess");
 	}
 });
