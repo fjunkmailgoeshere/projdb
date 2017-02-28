@@ -1,7 +1,12 @@
-<template name="admin_addnewuser">
-        <h2>Add a new user</h2><BR>
+<template name="admin_edituser">
+        <h2>Edit user</h2><BR>
+	{{> admin_edituser_selector}}
+
+	<BR><BR><BR>
+
         <form>
 
+		[Information below will fill out when name selected from above]<BR>
 		First Name: <input type="text" name="firstname"><br>
 		Last Name: <input type="text" name="lastname"><br>
                 Username: <input type="text" name="username"><br>
@@ -11,8 +16,17 @@
 			<OPTION SELECTED value="standard">Standard User</option>
 			<OPTION value="administrator">Administrator</option>
 			</SELECT><BR>
-                <button type = "submit">Add new user</button>
+                <button type = "submit">Edit user</button>
         </form>
 </template>
 
 
+<template name="admin_edituser_selector">
+	<form>
+	Select user: <SELECT NAME="users">
+		<OPTION SELECTED value="_id1">Example Eric - Standard</OPTION>
+		<OPTION value="_id2">Superintendent Sally - Administrator</OPTION>
+	</SELECT>
+	</form>
+
+</template>

@@ -1,10 +1,10 @@
 <template name="admin">
 
-	<button type="button" class="btn btn-primary btn-lg admin_addnewuser">Add New 		User</button>
-	<BR><button type="button" class="btn btn-primary btn-lg admin_edituser">Edit User</button>
-	<BR><button type="button" class="btn btn-primary btn-lg admin_resetpassword">Reset 		Password</button>
-	<BR><button type="button" class="btn btn-primary btn-lg admin_downloaddata">Download 		Data</button>
-	<BR><button type="button" class="btn btn-primary btn-lg admin_editpermissions">Edit 		Permissions</button>
-	<BR><button type="button" class="btn btn-primary btn-lg admin_backup">Backup</button>
+	<a href="{{pathFor route='admin_addnewuser'}}">Add New User</a> [next step: check from KT]
+	<BR><a href="{{pathFor route='admin_edituser'}}">Edit User</a> [next step: check from KT]
+	<BR><a href="{{pathFor route='admin_changepassword'}}">Change Password</a> [next step: check from KT]
+	<BR><a href="{{pathFor route='admin_downloaddata'}}">Download Data</a> [next step: need more work, KT input]
+	<BR><a href="{{pathFor route='admin_editpermissions'}}">Edit Permissions</a> [next step: need more work, KT input]
+	<BR><a href="{{pathFor route='admin_backupdata'}}">Backup Data</a>
 
 </template>
