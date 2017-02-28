@@ -2,7 +2,7 @@ Router.route('/', {
     template: 'main'
 });
 
-
+Router.route("/main");
 Router.route("/home");
 Router.route("/consults");
 Router.route("/admin");
