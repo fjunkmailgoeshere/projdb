@@ -1,45 +1,56 @@
-<template name="consults">
+<template name = "consults">
 
-This is the consults page
+<BR><BR>
+<form>
+	Date: <input type="date" name="date"> (Bootstrap may have a date picker?)<BR>
+	Name: <input type="text" name="name">(autocomplete?)<BR>
+	Entity: 
+	<SELECT NAME="entity">
+		<OPTION value="I">I - Individual</OPTION>
+		<OPTION value="GE">GE - Government</OPTION>
+		<OPTION value="PE">PE - Public</OPTION>
+		<OPTION value="CO">CO - Community Org</OPTION>
+		<OPTION value="PRE">PRE - Private</OPTION>
+	</SELECT><BR>
+
+	Hearing Status:
+	<SELECT NAME="hearingstatus">
+		<OPTION>Deaf</OPTION>
+		<OPTION>Hard-of-Hearing</OPTION>
+		<OPTION>Deafblind</OPTION>
+		<OPTION>Late Deafened</OPTION>
+		<OPTION>Declined to Answer</OPTION>
+	</SELECT><BR>
+
+	Method of contact: <BR>
+	<input type="radio" name="methodofcontact" value="email">Email <BR>
+	<input type="radio" name="methodofcontact" value="phone">Phone <BR>
+	<input type="radio" name="methodofcontact" value="inperson">In-person <BR>
+	Reason for contact: <BR>
+	<input type="checkbox" name="reasonforcontact" value="Communication Access">Communication Access <BR>
+	<input type="checkbox" name="reasonforcontact" value="Hearing Assistive Technology">Hearing Assistive Technology <BR>
+	<input type="checkbox" name="reasonforcontact" value="CART">CART <BR>
+	<input type="checkbox" name="reasonforcontact" value="Referral">Referral <BR>
+	<input type="checkbox" name="reasonforcontact" value="Technology Assistance">Technology Assistance <BR>
+	AGE (OR DOB?): <input type="text" name="age"><BR>
+	Gender:
+		<SELECT NAME="gender">
+			<OPTION>Male</OPTION>
+			<OPTION>Female</OPTION>
+			<OPTION>Transgender</OPTION>
+			<OPTION>Non-binary</OPTION>
+			<OPTION>Declined to Answer</OPTION>
+		</SELECT><BR>
+	Person taking call: <input type="text" name="persontakingcall">(Autofill based on login?)<BR>
+	Result of call: <input type="text" name="resultofcall"><BR>
+	Notes: <BR>
+	<TEXTAREA NAME="notes"></TEXTAREA>
+	<BR>
+	<button type="submit">Submit</button>
+</form>
+
+
 <BR>
-	Insert CCDHH Image here (need image hosting site first)
-	<BR><BR><BR>
-
-	<div class="row">
-		<div class="col-md-6">
-			<button type="button" class="btn btn-warning btn-lg consults_communicationtechnology">Communication Technology</button>
-		</div>
-		<BR><BR><BR>
-		<div class="col-md-6">
-			<button type="button" class="btn btn-warning btn-lg consults_communicationservices">Communication Services</button>
-		</div>
-		<BR><BR><BR>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<button type="button" class="btn btn-warning btn-lg consults_generalresources">General Resources</button>
-		</div>
-		<BR><BR><BR>
-		<div class="col-md-6">
-			<button type="button" class="btn btn-warning btn-lg consults_misc">Misc</button>
-		</div>
-		<BR><BR><BR>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-	<button type="button" class="btn btn-warning btn-lg consults_backup">Backup</button>
-		</div>
-	</div>
-
-
-
-<BR><BR><BR><BR><BR><BR><BR>
-
-The below was in the consults drill down, but I wasn't sure which button above to associate it with, so instead I'm just leaving it in a separate file: /client/consults/consult_contact.html. <BR> I am referencing it with template name = "consults_contact"
-<BR><BR>
-<BR><BR>
-
-{{> consults_contact}}
 
 
 </template>
