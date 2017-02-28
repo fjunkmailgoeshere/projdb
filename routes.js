@@ -35,16 +35,6 @@ Router.route("/admin/changepassword", {
 });
 
 
-Router.route("/admin/downloaddata", {
-	name: 'admin_downloaddata',
-	template: 'admin_downloaddata'
-});
-
-Router.route("/admin/editpermissions", {
-	name: 'admin_editpermissions',
-	template: 'admin_editpermissions'
-});
-
 Router.route("/admin/backupdata", {
 	name: 'admin_backupdata',
 	template: 'admin_backupdata'
