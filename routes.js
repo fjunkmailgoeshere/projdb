@@ -16,8 +16,15 @@ Router.route("/testing");
 
 
 // Trainings will change just like admin changed below
-Router.route("/trainings_addnewsession");
-Router.route("/trainings_createnewtrainingmodule");
+Router.route('/trainings/addnewsession', {
+	name: 'trainings_addnewsession',
+	template: 'trainings_addnewsession'
+});
+
+Router.route('/trainings/createnewtrainingmodule', {
+	name: 'trainings_createnewtrainingmodule',
+	template: 'trainings_createnewtrainingmodule'
+});
 
 Router.route('/trainings/editprevioustraining', { 
 	name: 'trainings_editprevioustraining',
