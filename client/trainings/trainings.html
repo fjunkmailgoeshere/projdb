@@ -1,35 +1,29 @@
 <template name="trainings">
 
-This is the trainings page
-<BR>
-Insert CCDHH Image here (need image hosting site first)
+<h2> Trainings </h2>
 	<BR><BR><BR>
+		
+	<a href="{{pathFor route='trainings_addnewsession'}}"> Add New Session 			</a>
+			
+			<BR>
+		
+	<a href="{{pathFor route='trainings_createnewtrainingmodule'}}"> Create 			New Training Module </a>
+			
+			<BR>
 
-	<div class="row">
-		<div class="col-md-6">
-			<button type="button" class="btn btn-primary btn-lg trainings_addnewsession">Add New 		Session</button>
-		</div>
-		<BR><BR><BR>
-		<div class="col-md-6">
-			<button type="button" class="btn btn-warning btn-lg trainings_editprevioustraining">Edit Previous Training</button>
-		</div>
-		<BR><BR><BR>
-	</div>
-	<div class="row">
-		<div class="col-md-6">
-			<button type="button" class="btn btn-warning btn-lg trainings_uploadsurveyresults">Upload Survey Results </button>
-		</div>
-		<BR><BR><BR>
-		<div class="col-md-6">
-			<button type="button" class="btn btn-primary btn-lg trainings_createnewtrainingmodule">Create new Training Module</button>
-		</div>
-		<BR><BR><BR>
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-	<button type="button" class="btn btn-warning btn-lg">Training Materials</button>
-		</div>
-	</div>
+	<a href="{{pathFor route='trainings_editprevioustraining'}}"> Edit 			Previous Training </a>
+			
+			<BR>
+				
+	<a href="{{pathFor route='trainings_Uploadsurveyresults'}}"> Upload Survey 			Results </a>
+	
+			<BR>
+				
+	<a href="{{pathFor route='Trainings_Materials'}}"> Training Materials </a>
+	
+			<BR>
+				
+	<a href="{{pathFor route='Survey Mode'}}"> Survey Mode </a>
 
 
 

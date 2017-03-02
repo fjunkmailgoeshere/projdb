@@ -19,6 +19,28 @@ Router.route("/testing");
 Router.route("/trainings_addnewsession");
 Router.route("/trainings_createnewtrainingmodule");
 
+Router.route('/trainings/editprevioustraining', { 
+	name: 'trainings_editprevioustraining',
+	template: 'trainings_editprevioustraining'
+});
+
+Router.route('/trainings/Uploadsurveyresults', {
+	name: 'trainings_uploadsurveyresults',
+	template: 'trainings_uploadsurveyresults'
+});
+
+Router.route('/trainings/materials', {
+	name: 'trainings_materials',
+	template: 'trainings_materials'
+});
+
+Router.route('/trainings/SurveyMode', {
+	name: 'trainings_surveymode',
+	template: 'trainings_surveymode'
+
+});
+
+
 //Admin pages
 Router.route('/admin/addnewuser', {
 	name: 'admin_addnewuser',
@@ -42,10 +64,11 @@ Router.route("/admin/backupdata", {
 });
 
 Router.route("/testing/testing", {
-name: 'testing_testing',
-template: 'testing_testing'
+	name: 'testing_testing',
+	template: 'testing_testing'
 
 });
+
 
 //Router.route('home', {
 //    path: "/home",
