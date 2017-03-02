@@ -24,17 +24,17 @@ Router.route('/trainings/editprevioustraining', {
 	template: 'trainings_editprevioustraining'
 });
 
-Router.route('/trainings/Uploadsurveyresults', {
+Router.route('/trainings/uploadsurveyresults', {
 	name: 'trainings_uploadsurveyresults',
 	template: 'trainings_uploadsurveyresults'
 });
 
-Router.route('/trainings/materials', {
-	name: 'trainings_materials',
-	template: 'trainings_materials'
+Router.route('/trainings/trainingmaterials', {
+	name: 'trainings_trainingmaterials',
+	template: 'trainings_trainingsmaterials'
 });
 
-Router.route('/trainings/SurveyMode', {
+Router.route('/trainings/surveymode', {
 	name: 'trainings_surveymode',
 	template: 'trainings_surveymode'
 
