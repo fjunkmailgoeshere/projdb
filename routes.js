@@ -38,7 +38,7 @@ Router.route('/trainings/uploadsurveyresults', {
 
 Router.route('/trainings/trainingmaterials', {
 	name: 'trainings_trainingmaterials',
-	template: 'trainings_trainingsmaterials'
+	template: 'trainings_trainingmaterials'
 });
 
 Router.route('/trainings/surveymode', {
