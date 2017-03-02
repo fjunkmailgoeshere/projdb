@@ -9,6 +9,7 @@ Router.route("/admin");
 Router.route("/communityaccess");
 Router.route("/trainings");
 Router.route("/reportquery");
+Router.route("/testing");
 
 
 
@@ -38,6 +39,12 @@ Router.route("/admin/changepassword", {
 Router.route("/admin/backupdata", {
 	name: 'admin_backupdata',
 	template: 'admin_backupdata'
+});
+
+Router.route("/testing/testing", {
+name: 'testing_testing',
+template: 'testing_testing'
+
 });
 
 //Router.route('home', {
