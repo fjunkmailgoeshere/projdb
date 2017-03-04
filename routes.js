@@ -1,8 +1,12 @@
 Router.route('/', {
+    name: 'main',
     template: 'main'
 });
 
-Router.route("/main");
+Router.route('/main', {
+	name: 'main2',
+	template: 'main'
+});
 Router.route("/home");
 Router.route("/consults");
 Router.route("/admin");
