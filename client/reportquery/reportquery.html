@@ -1,57 +1,58 @@
 <template name="reportquery">
 
-This is the report query page
-
+<h2>Report Query</h2>
 <BR><BR><BR>
-	
-	Select Type of Report
+<form>	
+		Select Type of Report
 
-<div class="radio">
-  <label><input type="radio" name="internal">Internal</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="external">External</label>
-</div>
+	<div class="radio">
+	  <label><input type="radio" value="internal" name="reporttype">Internal</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="external" name="reporttype">External</label>
+	</div>
 
-<BR><BR><BR>
+	<BR><BR><BR>
 
-Select Date Range of Report 
+	Select Date Range of Report 
 
-<div class="radio">
-  <label><input type="radio" name="PreviousMonth">Previous Month</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="CurrentMonth">Current Month</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="PreviousQuarter">Previous Quarter</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="CurrentQuarter">Current Quarter</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="YeartoDate">Year to Date</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="QuartertoDate">Quarter to Date</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="Custom">Custom</label>
-</div>
+	<div class="radio">
+	  <label><input type="radio" value="PreviousMonth" name="daterange">Previous Month</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="CurrentMonth" name="daterange">Current Month</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="PreviousQuarter" name="daterange">Previous Quarter</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="CurrentQuarter" name="daterange">Current Quarter</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="YeartoDate" name="daterange">Year to Date</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="QuartertoDate" name="daterange">Quarter to Date</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="Custom" name="daterange">Custom</label>
+	</div>
 
-<BR><BR><BR>
+	<BR><BR><BR>
 	
 	Output Format
 
-<div class="radio">
-  <label><input type="radio" name="email">E-mail</label>
-</div>
-<div class="radio">
-  <label><input type="radio" name="print">Print</label>
-</div>
-<div class="radio">
-	<label><input type="radio" name="PDF">PDF</label>
-</div>
-
+	<div class="radio">
+	  <label><input type="radio" value="email" name="reportformat">E-mail</label>
+	</div>
+	<div class="radio">
+	  <label><input type="radio" value="print" name="reportformat">Print</label>
+	</div>
+	<div class="radio">
+		<label><input type="radio" value="PDF" name="reportformat">PDF</label>
+	</div>
+	<br>
+	<button type="submit">Submit</button>
+</form>
 
 </template>
