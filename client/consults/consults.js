@@ -4,8 +4,6 @@ Template.consults.rendered=function() {
 }
 
 
-Consults = new Mongo.Collection('consults');
-
 Template.consults.events({
 	'submit form': function(event) {
 		event.preventDefault();
