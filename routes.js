@@ -1,3 +1,8 @@
+// TEMPORARY
+Router.route("/login");
+// END TEMPORARY
+
+
 Router.route('/', {
     name: 'main',
     template: 'main'
