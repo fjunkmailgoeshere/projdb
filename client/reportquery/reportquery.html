@@ -2,6 +2,8 @@
 
 <h2>Report Query</h2>
 <BR><BR><BR>
+
+<BR><BR>
 <form>	
 		Select Type of Report
 
@@ -54,5 +56,32 @@
 	<br>
 	<button type="submit">Submit</button>
 </form>
+<BR><BR>
+{{> reportquery_querytable}}
 
+</template>
+
+
+<template name="reportquery_querytable">
+	<table border = 1>
+		<tr>
+			<td>Date</td>
+			<td>Name</td>
+			<td>Entity</td>
+			<td>Hearing Status</td>
+			<td>Method of Contact</td>
+			<td>Age</td>
+			<td>Gender</td>
+		</tr>
+		<tr>
+			<td>{{data.date}}</td>
+			<td>{{data.name}}</td>
+			<td>{{data.entity}}</td>
+			<td>{{data.hearingstatus}}</td>
+			<td>{{data.methodofcontact}}</td>
+			<td>{{data.age}}</td>
+			<td>{{data.gender}}</td>
+		</tr>
+	</table>
+	
 </template>
