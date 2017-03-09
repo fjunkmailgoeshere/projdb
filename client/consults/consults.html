@@ -1,61 +1,148 @@
-<template name = "consults">
-<h2>Add Consultation</h2><BR>
-<form>
-	Date: <input type="text" name="thedate" class="form-control" id="my-datepicker" style="width: 200px;"> <BR>
-	Name: <input type="text" name="name">(autocomplete?)<BR>
-	Entity: 
-	<SELECT NAME="entity">
-		<OPTION value="I">I - Individual</OPTION>
-		<OPTION value="GE">GE - Government</OPTION>
-		<OPTION value="PE">PE - Public</OPTION>
-		<OPTION value="CO">CO - Community Org</OPTION>
-		<OPTION value="PRE">PRE - Private</OPTION>
-	</SELECT><BR>
+<template name= "consults">
+	<header>
+		{{>head}}
+	<h3>CURRENT BRANCH: DEMO_1 </h3> <br>
+	<h2> Add Consultation </h2>
+    </header>
+		
+		{{>navbar}}
 
-	Hearing Status:
-	<SELECT NAME="hearingstatus">
-		<OPTION>Deaf</OPTION>
-		<OPTION>Hard-of-Hearing</OPTION>
-		<OPTION>Deafblind</OPTION>
-		<OPTION>Late Deafened</OPTION>
-		<OPTION>Declined to Answer</OPTION>
-	</SELECT><BR>
+    <body class="compact-menu">
+       
+			
+			
+            <div class="page-inner"> <!-- X-Editable Header -->
+                <div class="page-title">
+                    <h3 class="breadcrumb-header">Consults</h3>
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb breadcrumb-with-header">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Consults</a></li>
+                            <li class="active">X-editable</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="main-wrapper">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-white">
+                                <div class="panel-body">
+                                    <h4 class="no-m m-b-lg">Consult Entry Form</h4>
+                                   
+								   
+								    <form method="get" id="frm" class="form-inline" action="form-x-editable.html">
+                                       
+	                                    <table id="user" class="table table-bordered table-striped" style="clear: both">
+	                                      
+										    <tbody> 
+	                                            
+												
+												<tr>
+													<td style="width: 35%;"> Date: </td>
+													<td style="width: 65%;"><a href="#" input type="text" name="thedate" class="form-control" id="my-datepicker"></a></td>
+												</tr>
+													
+												
+												<tr>   
+	                                                <td style="width: 35%;">Name</td>
+	                                                <td style="width: 65%;"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username" class="editable editable-click" style="display: inline;">Click to enter name</a></td>
+	                                            </tr>
+												
+	                                            <tr>   
+	                                                <td>Gender</td>
+	                                                <td><a href="#" id="entity" data-type="select" data-pk="1" data-value="" data-title="Select gender" class="editable editable-click" style="color: gray;">not selected</a></td>
+	                                            </tr>
+												
+	                                            <tr>  
+	                                                <td>Date of Birth</td>
+	                                                <td><a href="#" id="dob" data-type="combodate" data-value="1984-05-15" data-format="YYYY-MM-DD" data-viewformat="DD/MM/YYYY" data-template="D / MMM / YYYY" data-pk="1" data-title="Select Date of birth" class="editable editable-click">15/05/1984</a></td>
+	                                            </tr>	
+												
+												
+												
+                                            <tr>   
+                                                <td>Hearing Status</td>
+                                                <td><a href="#" id="hearingstatus" data-type="select" data-pk="1" data-value="" data-title="Select hearing status" class="editable editable-click" style="color: gray;">not selected</a></td>
+                                            </tr>
+											
+                                            <tr>        
+                                                <td>County</td>
+                                                <td><a href="#" id="coloradocounties" data-type="typeaheadjs" data-pk="1" data-placement="right" data-title="Start typing County" class="editable editable-click">County</a></td>
+                                            </tr>
+                                            
+											<tr>      
+                                                <td>City/Town</td>
+                                                <td><a href="#" id="coloradocities" data-type="select2" data-pk="1" data-value="BS" data-title="Select city/town" class="editable editable-click">City/Town</a></td>
+                                            </tr>
+											   
+											    <tr>   
+	                                                <td>Entity</td>
+	                                                <td><a href="#" id="entity" data-type="select" data-pk="1" data-value="" data-title="Select entity" class="editable editable-click" style="color: gray;">not selected</a></td>
+	                                            </tr>
+												
+	                                        
+												
+	                                            <tr>   
+	                                                <td>Method of Contact</td>
+	                                                <td><a href="#" id="methodofcontact" data-type="select" data-pk="1" data-value="" data-title="Select method of contact" class="editable editable-click" style="color: gray;">not selected</a></td>
+	                                            </tr>
+										
+										
+                                        		<tr>   
+	                                                <td>Reason for Contact</td>
+	                                                <td><a href="#" id="reasonforcontact" data-type="checklist" data-value="2,3" data-title="Select reasons for contact" class="editable editable-click">Reason 1<br>Reason 2</a></td>
+                                       		 	</tr>
+												
+											    <tr>   
+	                                                <td>Person Taking Call</td>
+	                                                <td><a href="#" id="persontakingcall" data-type="select" data-pk="1" data-value="" data-title="Select staff member" class="editable editable-click" style="color: gray;">not selected</a></td>
+	                                            </tr>
+												<tr>   
+	                                                <td style="width: 35%;">Result of Call</td>
+	                                                <td style="width: 65%;"><a href="#" id="username" data-type="text" data-pk="1" data-title="Enter username" class="editable editable-click" style="display: inline;">Click to enter result of call</a></td>
+	                                            </tr>
+												                                            <tr>         
+												                                                <td>Notes (ctrl + enter to submit) <i>ctrl+enter</i></td>
+												                                                <td><a href="#" id="comments" data-type="textarea" data-pk="1" data-placeholder="Your comments here..." data-title="Enter comments" class="editable editable-pre-wrapped editable-click">Enter Notes here</a></td>
+												                                            </tr>
+                                     
+                                  
+								   
+                                        </tbody>
+                                    </table>
+									  </form>
+									
+                                    <div style="float: left; width: 50%">
+                                        <h3>Console <small>(all ajax requests here are emulated)</small></h3> 
+                                        <div><textarea id="console" class="form-control" rows="8" style="width: 70%"></textarea></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
 
-	Method of contact: <BR>
-	<input type="radio" name="methodofcontact" value="email">Email <BR>
-	<input type="radio" name="methodofcontact" value="phone">Phone <BR>
-	<input type="radio" name="methodofcontact" value="inperson">In-person <BR>
-	Reason for contact: <BR>
-	<input type="checkbox" name="communicationaccess" value="Communication Access">Communication Access <BR>
-	<input type="checkbox" name="hearingassistivetechnology" value="Hearing Assistive Technology">Hearing Assistive Technology <BR>
-	<input type="checkbox" name="cart" value="CART">CART <BR>
-	<input type="checkbox" name="referral" value="Referral">Referral <BR>
-	<input type="checkbox" name="technologyassistance" value="Technology Assistance">Technology Assistance <BR>
-	AGE (OR DOB?): <input type="text" name="age"><BR>
-	Gender:
-		<SELECT NAME="gender">
-			<OPTION>Male</OPTION>
-			<OPTION>Female</OPTION>
-			<OPTION>Transgender</OPTION>
-			<OPTION>Non-binary</OPTION>
-			<OPTION>Declined to Answer</OPTION>
-		</SELECT><BR>	
-	Person taking call: <input type="text" name="persontakingcall">(Autofill based on login?)<BR>
-	Result of call: <input type="text" name="resultofcall"><BR>
-	Notes: <BR>
-	<TEXTAREA NAME="notes"></TEXTAREA>
-	<BR>
-	<button type="submit">Submit</button>
-</form>
-
-
-<BR>
-
-
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-3.1.0.min.js"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/pace-master/pace.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script src="assets/plugins/uniform/js/jquery.uniform.standalone.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/classie.js"></script>
+        <script src="assets/plugins/waves/waves.min.js"></script>
+        <script src="assets/plugins/3d-bold-navigation/js/main.js"></script>
+        <script src="assets/plugins/jquery-mockjax-master/jquery.mockjax.js"></script>
+        <script src="assets/plugins/moment/moment.js"></script>
+        <script src="assets/plugins/x-editable/bootstrap3-editable/js/bootstrap-editable.js"></script>
+        <script src="assets/plugins/x-editable/inputs-ext/typeaheadjs/lib/typeahead.js"></script>
+        <script src="assets/plugins/x-editable/inputs-ext/typeaheadjs/typeaheadjs.js"></script>
+        <script src="assets/plugins/x-editable/inputs-ext/address/address.js"></script>
+        <script src="assets/plugins/select2-3.4.8/select2.min.js"></script>
+        <script src="assets/plugins/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+        <script src="assets/js/meteor.min.js"></script>
+        <script src="assets/js/pages/form-x-editable.js"></script>
+        
+	</div></div></div></body>
 </template>
-
-
-
-
-
-
