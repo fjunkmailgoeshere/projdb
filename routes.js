@@ -1,25 +1,75 @@
+// Login
 Router.route('/', {
-    name: 'main',
-    template: 'main'
+    name: 'home2',
+    template: 'home'
 });
 
-Router.route('/main', {
-	name: 'main2',
-	template: 'main'
+Router.route('/login', {
+	name: 'login',
+	template: 'login'
 });
-Router.route("/home");
-Router.route("/consults");
-Router.route("/admin");
-Router.route("/communityaccess");
-Router.route("/trainings");
-Router.route("/reportquery");
-Router.route("/testing");
 
 
 
+//Admin pages
+Router.route('/admin/addnewuser', {
+	name: 'admin_addnewuser',
+	template: 'admin_addnewuser'
+});
+
+Router.route('/admin/edituser', {
+	name: 'admin_edituser',
+	template: 'admin_edituser'
+});
+
+Router.route("/admin/changepassword", {
+	name: 'admin_changepassword',
+	template: 'admin_changepassword'
+});
 
 
-// Trainings will change just like admin changed below
+Router.route("/admin/backupdata", {
+	name: 'admin_backupdata',
+	template: 'admin_backupdata'
+});
+
+Router.route('/admin', {
+	name: 'admin',
+	template: 'admin'
+});
+
+
+
+// Home
+
+Router.route('/home', {
+name: 'home',
+template: 'home'
+});
+
+
+// Consults
+Router.route('/consults', {
+	name: 'consults',
+	template: 'consults'
+});
+
+
+
+// Report Query
+Router.route('/reportquery', {
+	name: 'reportquery',
+	template: 'reportquery'
+});
+
+
+
+// Trainings 
+Router.route('/trainings',{
+	name: 'trainings',
+	template: 'trainings'
+});
+
 Router.route('/trainings/addnewsession', {
 	name: 'trainings_addnewsession',
 	template: 'trainings_addnewsession'
@@ -49,39 +99,11 @@ Router.route('/trainings/surveymode', {
 	name: 'trainings_surveymode',
 	template: 'trainings_surveymode'
 
-});
+})
 
 
-//Admin pages
-Router.route('/admin/addnewuser', {
-	name: 'admin_addnewuser',
-	template: 'admin_addnewuser'
-});
-
-Router.route('/admin/edituser', {
-	name: 'admin_edituser',
-	template: 'admin_edituser'
-});
-
-Router.route("/admin/changepassword", {
-	name: 'admin_changepassword',
-	template: 'admin_changepassword'
-});
 
 
-Router.route("/admin/backupdata", {
-	name: 'admin_backupdata',
-	template: 'admin_backupdata'
-});
-
-Router.route("/testing/testing", {
-	name: 'testing_testing',
-	template: 'testing_testing'
-
-});
 
 
-//Router.route('home', {
-//    path: "/home",
-//    layoutTemplate: 'home'
-//});
+

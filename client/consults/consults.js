@@ -105,43 +105,45 @@ Template.consults
         prepend: "not selected",
         source: [
             {value: 1, text: 'I - Individual'},
-            {value: 2, text: 'GE - Government'}
-			{value: 3, text: 'PE - Public'}
-			{value: 4, text: 'CO - Community'}
-			{value: 5, text: 'PRE - Private'}
+            {value: 2, text: 'GE - Government'},
+			{value: 3, text: 'PE - Public'},
+			{value: 4, text: 'CO - Community'},
+			{value: 5, text: 'PRE - Private'},
+        ],
     });
 	
     $('#methodofcontact').editable({
         prepend: "not selected",
         source: [
             {value: 1, text: 'Email'},
-            {value: 2, text: 'VP/Phone'}
-			{value: 3, text: 'In-person'}
-			{value: 4, text: 'Other'}
-
+            {value: 2, text: 'VP/Phone'},
+			{value: 3, text: 'In-person'},
+			{value: 4, text: 'Other'},
+        ],
     });
 	
     $('#reasonforcontact').editable({
         prepend: "not selected",
         source: [
             {value: 1, text: 'Communication Access'},
-            {value: 2, text: 'Hearing Assistive Technology'}
-			{value: 3, text: 'CART'}
-			{value: 4, text: 'Technology Assistance'}
-			{value: 5, text: 'Referral'}
+            {value: 2, text: 'Hearing Assistive Technology'},
+			{value: 3, text: 'CART'},
+			{value: 4, text: 'Technology Assistance'},
+			{value: 5, text: 'Referral'},
 			{value: 6, text: 'Other'}
-
+        ],
     });
 	
     $('#hearingstatus').editable({
         prepend: "not selected",
         source: [
             {value: 1, text: 'Deaf'},
-            {value: 2, text: 'Hard of Hearing'}
-			{value: 3, text: 'DeafBlind'}
-			{value: 4, text: 'Late Deafened'}
-			{value: 5, text: 'Hearing'}
-			{value: 6, text: 'Declined to Answer'}
+            {value: 2, text: 'Hard of Hearing'},
+			{value: 3, text: 'DeafBlind'},
+			{value: 4, text: 'Late Deafened'},
+			{value: 5, text: 'Hearing'},
+			{value: 6, text: 'Declined to Answer'},
+        ],
     });
 	
 
@@ -149,11 +151,12 @@ $('#persontakingcall').editable({
     prepend: "not selected",
     source: [
         {value: 1, text: 'Timothy'},
-        {value: 2, text: 'Cliff'}
-		{value: 3, text: 'Ryan'}
-		{value: 4, text: 'JoAnne'}
-		{value: 5, text: 'Cheri'}
+        {value: 2, text: 'Cliff'},
+		{value: 3, text: 'Ryan'},
+		{value: 4, text: 'JoAnne'},
+		{value: 5, text: 'Cheri'},
 		{value: 6, text: 'Mandy'}
+    ],
 	});
     
     $('#firstname').editable({
@@ -166,11 +169,10 @@ $('#persontakingcall').editable({
       prepend: "not selected",
       source: [
         	{value: 1, text: 'Male'},
-            {value: 2, text: 'Female'}
-			{value: 3, text: 'Transgender'}
-			{value: 4, text: 'Non-binary'}
-			{value: 5, text: 'Declined to Answer'}
-			
+            {value: 2, text: 'Female'},
+			{value: 3, text: 'Transgender'},
+			{value: 4, text: 'Non-binary'},
+			{value: 5, text: 'Declined to Answer'}	
         ],
         display: function(value, sourceData) {
              var colors = {"": "gray", 1: "green", 2: "blue"},
@@ -235,7 +237,7 @@ $('#persontakingcall').editable({
         {value: 2, text: 'hearing assistive technology'},
         {value: 3, text: 'CART'},
         {value: 4, text: 'technology assistance'},
-        {value: 5, text: 'referral'}
+        {value: 5, text: 'referral'},
 		{value: 6, text: 'other'}
        ]
     }); 

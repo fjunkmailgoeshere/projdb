@@ -1,7 +1,4 @@
-import { Template } from 'meteor/templating';
-import { ReactiveVar } from 'meteor/reactive-var';
-
-import './main.html';
+Template.login
 
 Template.main.events({
 	'submit form': function(event) {
