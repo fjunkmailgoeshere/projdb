@@ -1,6 +1,6 @@
 Template.login
 
-Template.main.events({
+Template.login.events({
 	'submit form': function(event) {
 		event.preventDefault();
 		login = event.target.login.value;
