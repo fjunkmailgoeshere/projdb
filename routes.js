@@ -9,6 +9,11 @@ Router.route('/login', {
 	template: 'login'
 });
 
+Router.route('/forgot', {
+	name: 'forgot',
+	template: 'forgot'
+});
+
 
 
 //Admin pages

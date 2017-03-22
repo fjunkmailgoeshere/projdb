@@ -64,8 +64,17 @@
 		                </form>
 		            </div>
 				</nav>
+	           
+			   <form class="search-form" action="#" method="GET">
+	               <div class="input-group">
+	                   <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
+	                   <span class="input-group-btn">
+	                       <button class="btn btn-default close-search" type="button"><i class="icon-close"></i></button>
+	                   </span>
+	               </div><!-- Input Group -->
+	           </form><!-- Search Form -->
 		       
-		        <main class="page-content content-wrap">
+			    <main class="page-content content-wrap">
 		            <div class="navbar">
 		                <div class="navbar-inner">
 		                    <div class="sidebar-pusher">
@@ -74,7 +83,7 @@
 		                        </a>
 		                    </div>
 		                    <div class="logo-box">
-		                        <a href="home.html" class="logo-text"><span>CCDHH Outreach</span></a>
+		                        <a href="{{pathFor route='home'}}" class="logo-text"><span>CCDHH Outreach</span></a>
 		                    </div><!-- Logo Box -->
 		                    <div class="search-button">
 		                        <a href="javascript:void(0);" class="show-search"><i class="icon-magnifier"></i></a>
@@ -273,7 +282,7 @@
 		            <div class="page-sidebar sidebar">
 		                <div class="page-sidebar-inner slimscroll">
 		                    <ul class="menu accordion-menu">
-		                        <li class="active"><a href="home.html" class="waves-effect waves-button"><span class="menu-icon icon-home"></span><p>Dashboard</p><span class="active-page"></span></a></li>
+		                        <li class="active"><a href="{{pathFor route='home'}}" class="waves-effect waves-button"><span class="menu-icon icon-home"></span><p>Dashboard</p><span class="active-page"></span></a></li>
 		                        <li><a href="profile.html" class="waves-effect waves-button"><span class="menu-icon icon-user"></span><p>Profile</p></a></li>
 		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-envelope-open"></span><p>Mailbox</p><span class="arrow"></span></a>
 		                            <ul class="sub-menu">
@@ -292,7 +301,7 @@
 		                            </ul>
 		                        </li>
 								
-		                        <li><a href="consults.html" class="waves-effect waves-button"><span class="menu-icon icon-pencil"></span><p>Consults</p></a></li>
+		                        <li><a href="{{pathFor route='consults'}}" class="waves-effect waves-button"><span class="menu-icon icon-pencil"></span><p>Consults</p></a></li>
 		                         
 		     
 		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-pie-chart"></span><p>Charts</p><span class="arrow"></span></a>
@@ -306,9 +315,9 @@
 								
 		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-power"></span><p>Login</p><span class="arrow"></span></a>
 		                            <ul class="sub-menu">
-		                                <li><a href="login.html">Login Form</a></li>
+		                                <li><a href="{{pathFor route='login'}}">Login Form</a></li>
 		                                <li><a href="register.html">Register Form</a></li>
-		                                <li><a href="forgot.html">Forgot Password</a></li>
+		                                <li><a href="{{pathFor route='forgot'}}">Forgot Password</a></li>
 		                                <li><a href="lock-screen.html">Lock Screen</a></li>
 		                            </ul>
 		                        </li>
@@ -335,7 +344,7 @@
 		                <div class="page-title">
 		                    <div class="page-breadcrumb">
 		                        <ol class="breadcrumb">
-		                            <li><a href="home.html">Home</a></li>
+		                            <li><a href="{{pathFor route='home'}}">Home</a></li>
 		                            <li class="active">Dashboard</li>
 		                        </ol>
 		                    </div>
