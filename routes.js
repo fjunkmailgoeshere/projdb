@@ -14,6 +14,11 @@ Router.route('/forgot', {
 	template: 'forgot'
 });
 
+Router.route('/lockscreen', {
+	name: 'lockscreen',
+	template: 'lockscreen'
+});
+
 
 
 //Admin pages
