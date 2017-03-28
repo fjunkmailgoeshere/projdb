@@ -109,6 +109,12 @@ Router.route('/trainings/surveymode', {
 	name: 'trainings_surveymode',
 	template: 'trainings_surveymode'
 
+});
+
+//Calendar
+Router.route('/calendar', {
+	name:'calendar',
+	tempalte: 'calendar'
 })
 
 

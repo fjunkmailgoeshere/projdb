@@ -484,25 +484,23 @@
 
                         </li>
 						
-<!-- Need to add path for a href below? -->
-                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-pencil"></span><p>Consults</p><span class="arrow"></span></a>
-                            <ul class="sub-menu">
-                    
-                                <li><a href="pathFor route='consults'}}">Enter Information</a></li>
-                            </ul>
-                        </li>
+<!-- Consults -->
+                        
+						<li role="presentation"><a href="{{pathFor route='consults'}}" class="waves-effect waves-button"><span class="menu-icon icon-pencil"></span><p>Consults</p></a></li>
 						
 						
-<!-- Need to add path for a href below? -->
-												
-                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-pie-chart"></span><p>Reports Query</p><span class="arrow"></span></a>
-                            <ul class="sub-menu">
-                                <li><a href="{{pathFor route='reportquery'}}">Print reports</a></li>
-                            
-                            </ul>
-                        </li>
+				
+<!-- Reports Query -->						
+						
 
-<!-- Need to add path for a href below? -->
+							<li role="presentation"><a href="{{pathFor route='reportquery'}}" class="waves-effect waves-button"><span class="menu-icon icon-pie-chart"></span><p>Reports Query</p></a></li>
+							
+							
+							
+												
+                       
+
+<!-- Login Stuff -->
                         <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-power"></span><p>Login</p><span class="arrow"></span></a>
                             <ul class="sub-menu">
                                 <li><a href="{{pathFor route='login'}}">Login Form</a></li>                     
@@ -515,47 +513,20 @@
                         </li>
 						
 
-<!-- This is where I stopped EDITING -->
+ 
+						
+<!-- Need link or route for Google Maps below -->						
+				
+						
+					<li role="presentation"><a href="maps-google.html" class="waves-effect waves-button"><span class="menu-icon icon-pointer"></span><p>Maps</p></a></li>
+						
 
 
+<!-- Calendar -->                     
+					<li role="presentation"><a href="{{pathFor route='calendar'}}" class="waves-effect waves-button"><span class="menu-icon icon-calendar"></span><p>Calendar</p></a></li>	
 						
-<!-- Need link for Google Maps below -->						
-						
-                        <li class="droplink"><a href="maps-google.html" class="waves-effect waves-button"><span class="menu-icon icon-pointer"></span><p>Maps</p><span class="arrow"></span></a>
-                        </li>
-						
-                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-present"></span><p>Extra</p><span class="arrow"></span></a>
-                            <ul class="sub-menu">
-                                <li><a href="404.html">404 Page</a></li>
-                                <li><a href="500.html">500 Page</a></li>
-                                <li><a href="invoice.html">Invoice</a></li>
-                                <li><a href="calendar.html">Calendar</a></li>
-                                <li><a href="faq.html">FAQ</a></li>
-                                <li><a href="todo.html">Todo</a></li>
-                                <li><a href="pricing-tables.html">Pricing Tables</a></li>
-                                <li><a href="shop.html">Shop</a></li>
-                                <li><a href="gallery.html">Gallery</a></li>
-                                <li><a href="timeline.html">Timeline</a></li>
-                                <li><a href="search.html">Search Results</a></li>
-                                <li><a href="coming-soon.html">Coming Soon</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </li>
-                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-energy"></span><p>Levels</p><span class="arrow"></span></a>
-                            <ul class="sub-menu">
-                                <li class="droplink"><a href="#"><p>Level 1.1</p><span class="arrow"></span></a>
-                                    <ul class="sub-menu">
-                                        <li class="droplink"><a href="#"><p>Level 2.1</p><span class="arrow"></span></a>
-                                            <ul class="sub-menu">
-                                                <li><a href="#">Level 3.1</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#">Level 2.2</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">Level 1.2</a></li>
-                            </ul>
-                        </li>
+
+                       
                     </ul>
                 </div><!-- Page Sidebar Inner -->
             </div><!-- Page Sidebar -->
@@ -574,40 +545,16 @@
                     <div class="row">
                     </div><!-- Row -->
                 </div><!-- Main Wrapper -->
-                <div class="page-footer">
-                    <p class="no-s">Made with <i class="fa fa-heart"></i> by stacks</p>
-                </div>
+                
             </div><!-- Page Inner -->
         </main><!-- Page Content -->
-        <nav class="cd-nav-container" id="cd-nav">
-            <header>
-                <h3>DEMOS</h3>
-            </header>
-            <div class="col-md-6 demo-block demo-selected demo-active">
-                <p>Dark<br>Design</p>
-            </div>
-            <div class="col-md-6 demo-block">
-                <a href="../admin2/index.html"><p>Light<br>Design</p></a>
-            </div>
-            <div class="col-md-6 demo-block">
-                <a href="../admin3/index.html"><p>Material<br>Design</p></a>
-            </div>
-            <div class="col-md-6 demo-block demo-coming-soon">
-                <p>Horizontal<br>(Coming)</p>
-            </div>
-            <div class="col-md-6 demo-block demo-coming-soon">
-                <p>Coming<br>Soon</p>
-            </div>
-            <div class="col-md-6 demo-block demo-coming-soon">
-                <p>Coming<br>Soon</p>
-            </div>
-        </nav>
-        <div class="cd-overlay"></div>
-	
+        
+		
+
 
         <!-- Javascripts -->
 		
-<!--Already part of {{>header}} - if not - uncomment this section
+
 			
 		<script src="assets/plugins/jquery/jquery-3.1.0.min.js"></script>
         <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -622,12 +569,12 @@
         <script src="assets/plugins/3d-bold-navigation/js/main.js"></script>
         <script src="assets/js/meteor.min.js"></script>
         
-<!-End of {{>header}}  -->
+
     
 		<!--Ensure this is in your corresponding template </body> -->
 			
 			
 			
-			
+	{{>footer}}		
 			
 </template>

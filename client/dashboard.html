@@ -1,4 +1,4 @@
-<template name="navbar">
+<template name="dashboard">
 	
 		<!--Navigation Bar -->
 		
@@ -65,277 +65,399 @@
 		            </div>
 				</nav>
 	           
-			   <form class="search-form" action="#" method="GET">
-	               <div class="input-group">
-	                   <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
-	                   <span class="input-group-btn">
-	                       <button class="btn btn-default close-search" type="button"><i class="icon-close"></i></button>
-	                   </span>
-	               </div><!-- Input Group -->
-	           </form><!-- Search Form -->
-		       
-			    <main class="page-content content-wrap">
-		            <div class="navbar">
-		                <div class="navbar-inner">
-		                    <div class="sidebar-pusher">
-		                        <a href="javascript:void(0);" class="waves-effect waves-button push-sidebar">
-		                            <i class="icon-arrow-right"></i>
-		                        </a>
-		                    </div>
-		                    <div class="logo-box">
-		                        <a href="{{pathFor route='home'}}" class="logo-text"><span>CCDHH Outreach</span></a>
-		                    </div><!-- Logo Box -->
-		                    <div class="search-button">
-		                        <a href="javascript:void(0);" class="show-search"><i class="icon-magnifier"></i></a>
-		                    </div>
-		                    <div class="topmenu-outer">
-		                        <div class="top-menu">
-		                            <ul class="nav navbar-nav navbar-left">
-		                                <li>		
-		                                    <a href="javascript:void(0);" class="sidebar-toggle"><i class="icon-arrow-left"></i></a>
-		                                </li>
-		                                <li>
-		                                    <a href="#cd-nav" class="cd-nav-trigger"><i class="icon-support"></i></a>
-		                                </li>
-		                                <li class="dropdown">
-		                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-		                                        <i class="icon-settings"></i>
-		                                    </a>
-		                                    <ul class="dropdown-menu dropdown-md dropdown-list theme-settings" role="menu">
-		                                        <li class="li-group">
-		                                            <ul class="list-unstyled">
-		                                                <li class="no-link" role="presentation">
-		                                                    Fixed Header 
-		                                                    <div class="ios-switch pull-right switch-md">
-		                                                        <input type="checkbox" class="js-switch pull-right fixed-header-check">
-		                                                    </div>
-		                                                </li>
-		                                            </ul>
-		                                        </li>
-		                                        <li class="li-group">
-		                                            <ul class="list-unstyled">
-		                                                <li class="no-link" role="presentation">
-		                                                    Fixed Sidebar 
-		                                                    <div class="ios-switch pull-right switch-md">
-		                                                        <input type="checkbox" class="js-switch pull-right fixed-sidebar-check">
-		                                                    </div>
-		                                                </li>
-		                                                <li class="no-link" role="presentation">
-		                                                    Horizontal bar 
-		                                                    <div class="ios-switch pull-right switch-md">
-		                                                        <input type="checkbox" class="js-switch pull-right horizontal-bar-check">
-		                                                    </div>
-		                                                </li>
-		                                                <li class="no-link" role="presentation">
-		                                                    Toggle Sidebar 
-		                                                    <div class="ios-switch pull-right switch-md">
-		                                                        <input type="checkbox" class="js-switch pull-right toggle-sidebar-check">
-		                                                    </div>
-		                                                </li>
-		                                                <li class="no-link" role="presentation">
-		                                                    Compact Menu 
-		                                                    <div class="ios-switch pull-right switch-md">
-		                                                        <input type="checkbox" class="js-switch pull-right compact-menu-check" checked>
-		                                                    </div>
-		                                                </li>
-		                                                <li class="no-link" role="presentation">
-		                                                    Hover Menu 
-		                                                    <div class="ios-switch pull-right switch-md">
-		                                                        <input type="checkbox" class="js-switch pull-right hover-menu-check">
-		                                                    </div>
-		                                                </li>
-		                                            </ul>
-		                                        </li>
-		                                        <li class="li-group">
-		                                            <ul class="list-unstyled">
-		                                                <li class="no-link" role="presentation">
-		                                                    Boxed Layout 
-		                                                    <div class="ios-switch pull-right switch-md">
-		                                                        <input type="checkbox" class="js-switch pull-right boxed-layout-check">
-		                                                    </div>
-		                                                </li>
-		                                            </ul>
-		                                        </li>
-		                                        <li class="no-link"><button class="btn btn-default reset-options">Reset Options</button></li>
-		                                    </ul>
-		                                </li>
-		                            </ul>
-		                            <ul class="nav navbar-nav navbar-right">
-		                                <li>	
-		                                    <a href="javascript:void(0);" class="show-search"><i class="icon-magnifier"></i></a>
-		                                </li>
-		                                <li class="dropdown">
-		                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope-open"></i><span class="badge badge-danger pull-right">6</span></a>
-		                                    <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
-		                                        <li><p class="drop-title">You have 6 new  messages!</p></li>
-		                                        <li class="dropdown-menu-list slimscroll messages">
-		                                            <ul class="list-unstyled">
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/user_turner.png" alt=""></div>
-		                                                        <p class="msg-name">Mandy Turner</p>
-		                                                        <p class="msg-text">RE: Referral</p>
-		                                                        <p class="msg-time">3 minutes ago</p>
-		                                                    </a>
-		                                                </li>
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/user_hirsch.png" alt=""></div>
-		                                                        <p class="msg-name"></p>
-		                                                        <p class="msg-text">Quick question</p>
-		                                                        <p class="msg-time">8 minutes ago</p>
-		                                                    </a>
-		                                                </li>
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/user_davis.png" alt=""></div>
-		                                                        <p class="msg-name">Cheri Davis</p>
-		                                                        <p class="msg-text">Meeting Agenda</p>
-		                                                        <p class="msg-time">56 minutes ago</p>
-		                                                    </a>
-		                                                </li>
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/avatar5.png" alt=""></div>
-		                                                        <p class="msg-name">Officer John Doe</p>
-		                                                        <p class="msg-text">Question about Law Enforcement Presentation</p>
-		                                                        <p class="msg-time">2 hours ago</p>
-		                                                    </a>
-		                                                </li>
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/user_moers.png" alt=""></div>
-		                                                        <p class="msg-name">Cliff Moers</p>
-		                                                        <p class="msg-text">RE: Office Hours</p>
-		                                                        <p class="msg-time">5 hours ago</p>
-		                                                    </a>
-		                                                </li>
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/avatar4.png" alt=""></div>
-		                                                        <p class="msg-name">Officer John Doe</p>
-		                                                        <p class="msg-text">Confirming Presentation</p>
-		                                                        <p class="msg-time">9 hours ago</p>
-		                                                    </a>
-		                                                </li>
-		                                            </ul>
-		                                        </li>
-		                                        <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
-		                                    </ul>
-		                                </li>
-		                                <li class="dropdown">
-		                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i><span class="badge badge-danger pull-right">3</span></a>
-		                                    <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
-		                                        <li><p class="drop-title">You have 3 pending tasks!</p></li>
-		                                        <li class="dropdown-menu-list slimscroll tasks">
-		                                            <ul class="list-unstyled">
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="task-icon badge badge-success"><i class="fa fa-user"></i></div>
-		                                                        <span class="badge badge-roundless badge-default pull-right">1m</span>
-		                                                        <p class="task-details">New user registered</p>
-		                                                    </a>
-		                                                </li>
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="task-icon badge badge-primary"><i class="fa fa-refresh"></i></div>
-		                                                        <span class="badge badge-roundless badge-default pull-right">24m</span>
-		                                                        <p class="task-details">3 Charts refreshed</p>
-		                                                    </a>
-		                                                </li>
-		                                                <li>
-		                                                    <a href="#">
-		                                                        <div class="task-icon badge badge-danger"><i class="fa fa-phone"></i></div>
-		                                                        <span class="badge badge-roundless badge-default pull-right">24m</span>
-		                                                        <p class="task-details">2 Missed calls</p>
-		                                                    </a>
-		                                                </li>
-		                                            </ul>
-		                                        </li>
-		                                        <li class="drop-all"><a href="#" class="text-center">All Tasks</a></li>
-		                                    </ul>
-		                                </li>
-		                                <li class="dropdown">
-		                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-		                                        <span class="user-name">Timothy<i class="fa fa-angle-down"></i></span>
-		                                        <img class="img-circle avatar" src="assets/images/user_chevalier.png" width="40" height="40" alt="">
-		                                    </a>
-		                                    <ul class="dropdown-menu dropdown-list" role="menu">
-		                                        <li role="presentation"><a href="profile.html"><i class="icon-user"></i>Profile</a></li>
-		                                        <li role="presentation"><a href="calendar.html"><i class="icon-calendar"></i>Calendar</a></li>
-		                                        <li role="presentation"><a href="inbox.html"><i class="icon-envelope-open"></i>Inbox<span class="badge badge-success pull-right">4</span></a></li>
-		                                        <li role="presentation" class="divider"></li>
-		                                        <li role="presentation"><a href="lock-screen.html"><i class="icon-lock"></i>Lock screen</a></li>
-		                                        <li role="presentation"><a href="login.html"><i class="icon-key m-r-xs"></i>Log out</a></li>
-		                                    </ul>
-		                                </li>
-		                                <li>
-		                                    <a href="javascript:void(0);" id="showRight">
-		                                        <i class="icon-bubbles"></i>
-		                                    </a>
-		                                </li>
-		                            </ul><!-- Nav -->
-		                        </div><!-- Top Menu -->
-		                    </div>
-		                </div>
-		            </div><!-- Navbar -->
-		            <div class="page-sidebar sidebar">
-		                <div class="page-sidebar-inner slimscroll">
-		                    <ul class="menu accordion-menu">
-		                        <li class="active"><a href="{{pathFor route='home'}}" class="waves-effect waves-button"><span class="menu-icon icon-home"></span><p>Dashboard</p><span class="active-page"></span></a></li>
-		                        <li><a href="profile.html" class="waves-effect waves-button"><span class="menu-icon icon-user"></span><p>Profile</p></a></li>
-		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-envelope-open"></span><p>Mailbox</p><span class="arrow"></span></a>
-		                            <ul class="sub-menu">
-		                                <li><a href="inbox.html">Inbox</a></li>
-		                                <li><a href="message-view.html">View Message</a></li>
-		                                <li><a href="compose.html">Compose</a></li>
-		                            </ul>
-		                        </li>
-		                        
-		                        
-		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-grid"></span><p>Reports Query</p><span class="arrow"></span></a>
-		                            <ul class="sub-menu">
-		                                <li><a href="table-static.html">Static Tables</a></li>
-		                                <li><a href="table-responsive.html">Responsive Tables</a></li>
-		                                <li><a href="table-data.html">Data Tables</a></li>
-		                            </ul>
-		                        </li>
+			     <!-- search bar at top of page. Possibly related to magnifying glass icon. Comment out if want to keep>
+	       
+			     <form class="search-form" action="#" method="GET">
+			             <div class="input-group">
+			                 <input type="text" name="search" class="form-control search-input" placeholder="Type something...">
+			                 <span class="input-group-btn">
+			                     <button class="btn btn-default close-search" type="button"><i class="icon-close"></i></button>
+			                 </span>
+			             </div></form>    <!- Input Group -->
+			        <!-- Search Form Above -->
+	 
+	   
+			          <main class="page-content content-wrap">
+			              <div class="navbar">
+			                  <div class="navbar-inner">
+			                      <div class="sidebar-pusher">
+			                          <a href="javascript:void(0);" class="waves-effect waves-button push-sidebar">
+			                              <i class="icon-arrow-right"></i>
+			                          </a>
+			                      </div>
+			                      <div class="logo-box">
+			                          <a href="{{pathFor route='home'}}" class="logo-text"><span>CCDHH Outreach</span></a>
+			                      </div><!-- Logo Box -->
+			                      <div class="search-button">
+						
+			  <!-- Need to add JS code for search function below -->
+						
+						
+												
+			                          <a href="javascript:void(0);" class="show-search"><i class="icon-magnifier"></i></a>
+			                      </div>
+			                      <div class="topmenu-outer">
+			                          <div class="top-menu">
+			                              <ul class="nav navbar-nav navbar-left">
+			                                  <li>	
+									
+			  <!-- Need to add JS code for search function below -->
+										
+			                                      <a href="javascript:void(0);" class="sidebar-toggle"><i class="icon-arrow-left"></i></a>
+			                                  </li>
+			                                  <li>
+									
+			  <!-- Need to address link below -->
+
+			                                      <a href="#cd-nav" class="cd-nav-trigger"><i class="icon-support"></i></a>
+			                                  </li>
+			                                  <li class="dropdown">
+			                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                                          <i class="icon-settings"></i>
+			                                      </a>
+			                                      <ul class="dropdown-menu dropdown-md dropdown-list theme-settings" role="menu">
+			                                          <li class="li-group">
+			                                              <ul class="list-unstyled">
+			                                                  <li class="no-link" role="presentation">
+			                                                      Fixed Header 
+			                                                      <div class="ios-switch pull-right switch-md">
+			                                                          <input type="checkbox" class="js-switch pull-right fixed-header-check">
+			                                                      </div>
+			                                                  </li>
+			                                              </ul>
+			                                          </li>
+			                                          <li class="li-group">
+			                                              <ul class="list-unstyled">
+			                                                  <li class="no-link" role="presentation">
+			                                                      Fixed Sidebar 
+			                                                      <div class="ios-switch pull-right switch-md">
+			                                                          <input type="checkbox" class="js-switch pull-right fixed-sidebar-check">
+			                                                      </div>
+			                                                  </li>
+			                                                  <li class="no-link" role="presentation">
+			                                                      Horizontal bar 
+			                                                      <div class="ios-switch pull-right switch-md">
+			                                                          <input type="checkbox" class="js-switch pull-right horizontal-bar-check">
+			                                                      </div>
+			                                                  </li>
+			                                                  <li class="no-link" role="presentation">
+			                                                      Toggle Sidebar 
+			                                                      <div class="ios-switch pull-right switch-md">
+			                                                          <input type="checkbox" class="js-switch pull-right toggle-sidebar-check">
+			                                                      </div>
+			                                                  </li>
+			                                                  <li class="no-link" role="presentation">
+			                                                      Compact Menu 
+			                                                      <div class="ios-switch pull-right switch-md">
+			                                                          <input type="checkbox" class="js-switch pull-right compact-menu-check" checked>
+			                                                      </div>
+			                                                  </li>
+			                                                  <li class="no-link" role="presentation">
+			                                                      Hover Menu 
+			                                                      <div class="ios-switch pull-right switch-md">
+			                                                          <input type="checkbox" class="js-switch pull-right hover-menu-check">
+			                                                      </div>
+			                                                  </li>
+			                                              </ul>
+			                                          </li>
+			                                          <li class="li-group">
+			                                              <ul class="list-unstyled">
+			                                                  <li class="no-link" role="presentation">
+			                                                      Boxed Layout 
+			                                                      <div class="ios-switch pull-right switch-md">
+			                                                          <input type="checkbox" class="js-switch pull-right boxed-layout-check">
+			                                                      </div>
+			                                                  </li>
+			                                              </ul>
+			                                          </li>
+			                                          <li class="no-link"><button class="btn btn-default reset-options">Reset Options</button></li>
+			                                      </ul>
+			                                  </li>
+			                              </ul>
+			                              <ul class="nav navbar-nav navbar-right">
+			                                  <li>
+									
+			  <!-- Need to add JS code for a href below -->
+	
+			                                      <a href="javascript:void(0);" class="show-search"><i class="icon-magnifier"></i></a>
+			                                  </li>
+			                                  <li class="dropdown">
+
+
+			  <!-- Need to add path for a href below? -->
+
+
+			  									<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-envelope-open"></i><span class="badge badge-danger pull-right">4</span></a>
+			                                      <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+			                                          <li><p class="drop-title">You have 6 new  messages!</p></li>
+			                                          <li class="dropdown-menu-list slimscroll messages">
+			                                              <ul class="list-unstyled">
+			                                                  <li>
+                                                    
+													
+			  <!-- Need to add path for a href below? -->
+
+													
+												
+													
+			  	                                                    <a href="#">
+			  	                                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/user_turner.png" alt=""></div>
+			  	                                                        <p class="msg-name">Mandy Turner</p>
+			  	                                                        <p class="msg-text">RE: Referral</p>
+			  	                                                        <p class="msg-time">3 minutes ago</p>
+			  	                                                    </a>
+			  	                                                </li>
+			  	                                                <li>
+														
+			  <!-- Need to add path for a href below? -->
+														
+														
+			  	                                                    <a href="#">
+			  	                                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/user_hirsch.png" alt=""></div>
+			  	                                                        <p class="msg-name"></p>
+			  	                                                        <p class="msg-text">Quick question</p>
+			  	                                                        <p class="msg-time">8 minutes ago</p>
+			  	                                                    </a>
+			  	                                                </li>
+			  	                                                <li>
+														
+														
+			  <!-- Need to add path for a href below? -->
+													
+														
+			  	                                                    <a href="#">
+			  	                                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/user_davis.png" alt=""></div>
+			  	                                                        <p class="msg-name">Cheri Davis</p>
+			  	                                                        <p class="msg-text">Meeting Agenda</p>
+			  	                                                        <p class="msg-time">56 minutes ago</p>
+			  	                                                    </a>
+			  	                                                </li>
+			  	                                                <li>
+														
+														
+			  <!-- Need to add path for a href below? -->
+													
+														
+														
+			  	                                                    <a href="#">
+			  	                                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/avatar5.png" alt=""></div>
+			  	                                                        <p class="msg-name">Officer John Doe</p>
+			  	                                                        <p class="msg-text">Question about Law Enforcement Presentation</p>
+			  	                                                        <p class="msg-time">2 hours ago</p>
+			  	                                                    </a>
+			  	                                                </li>
+			  	                                                <li>
+														
+														
+			  <!-- Need to add path for a href below? -->
+														
+														
+			  	                                                    <a href="#">
+			  	                                                        <div class="msg-img"><div class="online on"></div><img class="img-circle" src="assets/images/user_moers.png" alt=""></div>
+			  	                                                        <p class="msg-name">Cliff Moers</p>
+			  	                                                        <p class="msg-text">RE: Office Hours</p>
+			  	                                                        <p class="msg-time">5 hours ago</p>
+			  	                                                    </a>
+			  	                                                </li>
+			  	                                                <li>
+														
+														
+														
+			  <!-- Need to add path for a href below? -->
+													
+														
+			  	                                                    <a href="#">
+			  	                                                        <div class="msg-img"><div class="online off"></div><img class="img-circle" src="assets/images/avatar4.png" alt=""></div>
+			  	                                                        <p class="msg-name">Officer John Doe</p>
+			  	                                                        <p class="msg-text">Confirming Presentation</p>
+			  	                                                        <p class="msg-time">9 hours ago</p>
+															
+			                                                      </a>
+			                                                  </li>
+			                                              </ul>
+			                                          </li>
+										
+										
+			  <!-- Need to add path for a href below? -->
+										
+										
+			                                          <li class="drop-all"><a href="#" class="text-center">All Messages</a></li>
+			                                      </ul>
+			                                  </li>
+			                                  <li class="dropdown">
+			                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="icon-bell"></i><span class="badge badge-danger pull-right">3</span></a>
+			                                      <ul class="dropdown-menu title-caret dropdown-lg" role="menu">
+			                                          <li><p class="drop-title">You have 3 pending tasks!</p></li>
+			                                          <li class="dropdown-menu-list slimscroll tasks">
+			                                              <ul class="list-unstyled">
+			                                                  <li>
+			                                                      <a href="#">
+			                                                          <div class="task-icon badge badge-success"><i class="fa fa-user"></i></div>
+			                                                          <span class="badge badge-roundless badge-default pull-right">1m</span>
+			                                                          <p class="task-details">New user registered</p>
+			                                                      </a>
+			                                                  </li>
+			                                                  <li>
+													
+													
+			  <!-- Need to add path for a href below? -->
+													
+													
+			                                                      <a href="#">
+			                                                          <div class="task-icon badge badge-primary"><i class="fa fa-refresh"></i></div>
+			                                                          <span class="badge badge-roundless badge-default pull-right">24m</span>
+			                                                          <p class="task-details">3 Charts refreshed</p>
+			                                                      </a>
+			                                                  </li>
+			                                                  <li>
+													
+													
+			  <!-- Need to add path for a href below? -->
+												
+													
+			                                                      <a href="#">
+			                                                          <div class="task-icon badge badge-danger"><i class="fa fa-phone"></i></div>
+			                                                          <span class="badge badge-roundless badge-default pull-right">1h</span>
+			                                                          <p class="task-details">2 Missed calls</p>
+			                                                      </a>
+			                                                  </li>
+			                                              </ul>
+			                                          </li>
+										
+										
+			  <!-- Need to add path for a href below? -->
+										
+										
+			                                          <li class="drop-all"><a href="#" class="text-center">All Tasks</a></li>
+			                                      </ul>
+			                                  </li>
+			                                  <li class="dropdown">
+									
+									
+			  <!-- Need to add path for a href below? -->
+									
+									
+			                                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+			                                          <span class="user-name">Timothy<i class="fa fa-angle-down"></i></span>
+			                                          <img class="img-circle avatar" src="assets/images/user_chevalier.png" width="40" height="40" alt="">
+			                                      </a>
+			                                      <ul class="dropdown-menu dropdown-list" role="menu">
+                                      
+			  <!-- Need to add path for a href below? -->
+								  
+									  
+			  									    <li role="presentation"><a href="profile.html"><i class="icon-user"></i>Profile</a></li>
+                                        
+										
+			  <!-- Need to add path for a href below? -->
+																				
+			  										<li role="presentation"><a href="calendar.html"><i class="icon-calendar"></i>Calendar</a></li>
+                                        
+			  <!-- Need to add path for a href below? -->										
+										
+			  										<li role="presentation"><a href="inbox.html"><i class="icon-envelope-open"></i>Inbox<span class="badge badge-success pull-right">4</span></a></li>
+			                                          <li role="presentation" class="divider"></li>
+                                        
+			  <!-- Need to add path for a href below? -->
+																				
+			  										<li role="presentation"><a href="{{pathFor route='lockscreen'}}"><i class="icon-lock"></i>Lock screen</a></li>
+                                        
+			  <!-- Need to add path for a href below? -->
+																				
+			  										<li role="presentation"><a href="login.html"><i class="icon-key m-r-xs"></i>Log out</a></li>
+			                                      </ul>
+			                                  </li>
+			                                  <li>
+
+			  <!-- Need to add JS code or path for a href below? -->  
+									                                  
+			  									<a href="javascript:void(0);" id="showRight">
+			                                          <i class="icon-bubbles"></i>
+			                                      </a>
+			                                  </li>
+			                              </ul><!-- Nav -->
+			                          </div><!-- Top Menu -->
+			                      </div>
+			                  </div>
+			              </div><!-- Navbar -->
+			              <div class="page-sidebar sidebar">
+			                  <div class="page-sidebar-inner slimscroll">
+			                      <ul class="menu accordion-menu">
+			                          <li><a href="{{pathFor route='home'}}" class="waves-effect waves-button"><span class="menu-icon icon-home"></span><p>Dashboard</p></a></li>
+						
+			  <!-- Need to add path for a href below? -->						
+						
+			                          <li><a href="profile.html" class="waves-effect waves-button"><span class="menu-icon icon-user"></span><p>Profile</p></a></li>
+                        
+						
+			  <!-- Need to add path for a href below? -->						
+						
+			  						<li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-envelope-open"></span><p>Mailbox</p><span class="arrow"></span></a>
+			                              <ul class="sub-menu">
 								
-		                        <li><a href="{{pathFor route='consults'}}" class="waves-effect waves-button"><span class="menu-icon icon-pencil"></span><p>Consults</p></a></li>
-		                         
-		     
-		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-pie-chart"></span><p>Charts</p><span class="arrow"></span></a>
-		                            <ul class="sub-menu">
-		                                <li><a href="charts-rickshaw.html">Rickshaw</a></li>
-		                                <li><a href="charts-morris.html">Morris</a></li>
-		                                <li><a href="charts-flotchart.html">Flotchart</a></li>
-		                                <li><a href="charts-chartjs.html">Chart.js</a></li>
-		                            </ul>
-		                        </li>
-								
-		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-power"></span><p>Login</p><span class="arrow"></span></a>
-		                            <ul class="sub-menu">
-		                                <li><a href="{{pathFor route='login'}}">Login Form</a></li>
-		                                <li><a href="register.html">Register Form</a></li>
-		                                <li><a href="{{pathFor route='forgot'}}">Forgot Password</a></li>
-		                                <li><a href="lock-screen.html">Lock Screen</a></li>
-		                            </ul>
-		                        </li>
-								
-		                        <li><a href="maps-google.html" class="waves-effect waves-button"><span class="menu-icon icon-pointer"></span><p>Maps</p></a></li>
-		                            
-		                        <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-present"></span><p>Extra</p><span class="arrow"></span></a>
-		                            <ul class="sub-menu">
-		                                <li><a href="calendar.html">Calendar</a></li>
-		                                <li><a href="faq.html">FAQ</a></li>
-		                                <li><a href="todo.html">Todo</a></li>
-		                                <li><a href="gallery.html">Gallery</a></li>
-		                                <li><a href="timeline.html">Timeline</a></li>
-		                                <li><a href="search.html">Search Results</a></li>
-		                                <li><a href="coming-soon.html">Coming Soon</a></li>
-		                                <li><a href="contact.html">Contact</a></li>
-		                            </ul>
-		                        </li>
+			  <!-- Need to add path for a href below? -->
+																
+			                                  <li><a href="inbox.html">Inbox</a></li>
+                                
+			  <!-- Need to add path for a href below? -->
+																
+			  								<li><a href="message-view.html">View Message</a></li>
+
+			  <!-- Need to add path for a href below? -->
+																
+			                                  <li><a href="compose.html">Compose</a></li>
+			                              </ul>
+			                          </li>
+                        
+
+						
+						
+						
+			                          <li class="droplink active open">
+
+
+			                          </li>
+						
+			  <!-- Consults -->
+                        
+			  						<li role="presentation"><a href="{{pathFor route='consults'}}" class="waves-effect waves-button"><span class="menu-icon icon-pencil"></span><p>Consults</p></a></li>
+						
+						
+				
+			  <!-- Reports Query -->						
+						
+
+			  							<li role="presentation"><a href="{{pathFor route='reportquery'}}" class="waves-effect waves-button"><span class="menu-icon icon-pie-chart"></span><p>Reports Query</p></a></li>
+							
+							
+							
+												
+                       
+
+			  <!-- Login Stuff -->
+			                          <li class="droplink"><a href="#" class="waves-effect waves-button"><span class="menu-icon icon-power"></span><p>Login</p><span class="arrow"></span></a>
+			                              <ul class="sub-menu">
+			                                  <li><a href="{{pathFor route='login'}}">Login Form</a></li>                     
+			                                  <li><a href="register.html">Register Form</a></li>
+                             
+			                                  <li><a href="{{pathFor route='forgot'}}">Forgot Password</a></li>
+			                                  <li><a href="{{pathFor route='lockscreen'}}">Lock Screen</a></li>
+			                              </ul>
+							
+			                          </li>
+						
+
+ 
+						
+			  <!-- Need link or route for Google Maps below -->						
+				
+						
+			  					<li role="presentation"><a href="maps-google.html" class="waves-effect waves-button"><span class="menu-icon icon-pointer"></span><p>Maps</p></a></li>
+						
+
+
+			  <!-- Calendar -->                     
+			  					<li role="presentation"><a href="{{pathFor route='calendar'}}" class="waves-effect waves-button"><span class="menu-icon icon-calendar"></span><p>Calendar</p></a></li>
 								
 		         </ul>
 		                </div> <!-- Page Sidebar Inner -->

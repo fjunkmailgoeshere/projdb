@@ -1,0 +1,80 @@
+<template name="calendar">
+    {{>head}}
+	{{>layoutblank}}
+        
+        <!-- Title -->
+        <title>Calendar</title>
+        
+
+    <body class="compact-menu">
+       
+          
+            <div class="page-inner">
+                <div class="page-title">
+                    <h3 class="breadcrumb-header">Calendar</h3>
+                    <div class="page-breadcrumb">
+                        <ol class="breadcrumb breadcrumb-with-header">
+                            <li><a href="{{pathFor route='home'}}.html">Home</a></li>
+             
+                            <li class="active">Calendar</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="main-wrapper">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-white">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Events</h3>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="events">
+										
+										
+<!-- Add right a href paths below -->
+										
+										
+                                        <div class="calendar-event"><p>Meeting with Cliff.</p><a href="javascript:void(0);" class="remove-calendar-event"><i class="icon-close"></i></a></div>
+                                        <div class="calendar-event"><p>Jeffco Training.</p><a href="javascript:void(0);" class="remove-calendar-event"><i class="icon-close"></i></a></div>
+                                        <div class="calendar-event"><p>Quarterly Report due.</p><a href="javascript:void(0);" class="remove-calendar-event"><i class="icon-close"></i></a></div>
+                                        <div class="calendar-event"><p>Meeting with ACE.</p><a href="javascript:void(0);" class="remove-calendar-event"><i class="icon-close"></i></a></div>
+                                        <div class="calendar-event"><p>Team Meeting.</p><a href="javascript:void(0);" class="remove-calendar-event"><i class="icon-close"></i></a></div>
+                                    </div>
+                                    <input class="form-control add-event m-t-lg" type="text" placeholder="Add Event">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="panel panel-white">
+                                <div class="panel-body">
+                                    <div id="calendar"></div>
+                                </div>
+                          </div> 
+                     </div>
+                    </div><!-- Row -->
+                </div><!-- Main Wrapper -->
+            </div><!-- Page Inner -->
+	
+        
+	
+        <!-- Javascripts -->
+        <script src="assets/plugins/jquery/jquery-3.1.0.min.js"></script>
+        <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+        <script src="assets/plugins/pace-master/pace.min.js"></script>
+        <script src="assets/plugins/jquery-blockui/jquery.blockui.js"></script>
+        <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="assets/plugins/switchery/switchery.min.js"></script>
+        <script src="assets/plugins/uniform/js/jquery.uniform.standalone.js"></script>
+        <script src="assets/plugins/offcanvasmenueffects/js/classie.js"></script>
+        <script src="assets/plugins/waves/waves.min.js"></script>
+        <script src="assets/plugins/3d-bold-navigation/js/main.js"></script>
+        <script src="assets/plugins/fullcalendar/lib/moment.min.js"></script>
+        <script src="assets/plugins/fullcalendar/fullcalendar.min.js"></script>
+        <script src="assets/js/meteor.min.js"></script>
+        <script src="assets/js/pages/calendar.js"></script>
+  
+	</body>
+	
+	{{>footer}}   
+</template>
